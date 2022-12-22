@@ -29,9 +29,9 @@
   </head>
 
   <body>
-    <nav>
+    <nav class="nav-main">
       <div class="nav-container">
-        <img src="./images/logo.svg" alt="Fylo logo" />
+        <img class="nav-img" src="./images/logo.svg" alt="Fylo logo" />
         <div class="nav-items">
           <ul class="nav-list font-head">
             <li class="nav-list-item"><a href="#">Features</a></li>
@@ -43,8 +43,9 @@
     </nav>
     <main>
       <header>
-        <div class="header-img">
-          <img src="./images/illustration-1.svg" alt="fylo main illustration" />
+        <div class="header-container">
+        <div class="header-img-div">
+          <img class="header-img" src="./images/illustration-1.svg" alt="fylo main illustration" />
         </div>
         <div class="header-text">
           <h1 class="header-main-title font-head">
@@ -61,7 +62,7 @@
               <input
                 type="email"
                 name="email"
-                id="email"
+                aria-label="email"
                 value="Enter your email"
                 class="form-input-email"
                 required
@@ -72,10 +73,17 @@
             </div>
           </form>
         </div>
+        </div>
       </header>
-      <section>
-        <div class="lead-info">
+      <section class="section-lead">
+        <div class="lead-bg-pattern"></div>
+        <div class="lead-info-container">
+           <img class="lead-info-img"
+              src="./images/illustration-2.svg"
+              alt="fylo team illustration"
+            />
           <div class="lead-info-text">
+             
             <h2 class="lead-info-title font-head">
               Stay productive, wherever you are
             </h2>
@@ -92,10 +100,7 @@
             </a>
           </div>
           <div class="lead-info-review">
-            <img
-              src="./images/illustration-2.svg"
-              alt="fylo team illustration"
-            />
+          
             <figure class="testimonial-card font-head">
               <span class="icon-quote" aria-hidden="true"></span>
               <blockquote>
@@ -105,7 +110,7 @@
                   well-oiled collaboration machine.
                 </p>
               </blockquote>
-              <figcaption class="testimonial-author">
+              <figcaption class="testimonial-author-div">
                 <img
                   class="testimonial-avatar"
                   src="./images/avatar-testimonial.jpg"
@@ -122,7 +127,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="section-access text-white">
         <div class="access-details">
           <div class="access-details-text">
             <h3 class="access-title font-head">Get early access today</h3>
@@ -139,25 +144,26 @@
               <input
                 type="email"
                 name="email"
-                id="email"
-                value="email@example.com"
+                aria-label="email"
+                value="Enter your email"
                 class="form-input-email"
                 required
               />
             </div>
             <div class="form-input">
-              <input type="submit" value="Get Started For Free" class="form-btn" />
+              <input type="submit" value="Get Started" class="form-btn" />
             </div>
+          </form>
           </div>
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer-nav text-white">
       <div class="footer-container">
         <div class="footer-logo">
         <img class="footer-logo-img" src="./images/logo.svg" alt="Fylo logo">
         </div>
-      <div class="footer-container">
+      <div class="footer-lists">
         <div class="footer-contact">
           <ul class="footer-contact-lists">
             <li>Phone: +1-543-123-4567</li>
@@ -182,21 +188,21 @@
             <div class="footer-nav-socials">
         <a
           href="https://facebook.com"
-          class="fa-brands fa-facebook-f fa-lg"
+          class="fa-brands fa-facebook-f fa-sm"
           target="_blank"
           rel="noopener"
           aria-label="clipboard facebook"
         ></a>
         <a
           href="https://twitter.com"
-          class="fa-brands fa-twitter fa-lg"
+          class="fa-brands fa-twitter fa-sm"
           target="_blank"
           rel="noopener"
           aria-label="clipboard twitter"
         ></a>
         <a
           href="https://instagram.com"
-          class="fa-brands fa-instagram fa-lg"
+          class="fa-brands fa-instagram fa-sm"
           target="_blank"
           rel="noopener"
           aria-label="clipboard instagram"
