@@ -1,0 +1,106 @@
+:root {
+  --dark-blue: hsl(243, 87%, 12%);
+  --desaturated-blue: hsl(238, 22%, 44%);
+  --bright-blue: hsl(224, 93%, 58%);
+  --moderate-cyan: hsl(170, 45%, 43%);
+  --light-gray-blue: hsl(240, 75%, 98%);
+  --light-gray: hsl(0, 0%, 75%);
+
+  --font-head: "Raleway", sans-serif;
+  --font-body: "Open Sans", sans-serif;
+}
+
+/*** Neutral ***/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  border: none;
+}
+
+.font-head {
+  font-family: var(--font-head);
+}
+
+label[for="email"] {
+  display: none;
+}
+
+.info-link {
+  content: url(./images/icon-arrow.svg);
+}
+
+.icon-quote {
+  content: url(./images/icon-quotes.svg);
+}
+
+.fa-brands {
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid rgb(247, 247, 248);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+i:hover {
+  color: var(--soft-magenta);
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
