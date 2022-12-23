@@ -328,9 +328,9 @@ footer li {
   padding-bottom: 1rem;
 }
 
-label[for="email"] {
+/* label[for="email"] {
   display: none;
-}
+} */
 
 nav a:hover {
   color: hsl(224, 74%, 70%);
